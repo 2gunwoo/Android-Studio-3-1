@@ -1,18 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/space6" />
+
+        <TextView
+            android:id="@+id/myImageViewText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="  법정화폐 vs 암호화폐"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="left|bottom"
+            android:text="암호화폐는 우주와 같다.
+  \n무한한 발견속에서 경험하지 않는건 정답이 아니다.
+  \n내 생각을 누가 판단할 수 있는가?\n많은 정보와 미래에서 해답을 얻어야 한다.
+  \n시작하자 내가 정답인 새로운 길 스테이비트"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    <Button
+        android:id="@+id/long_short"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="국내 long_short 방향"
+        android:textSize="13.5dp"
+        android:onClick="onClick"
+        android:layout_marginRight="6dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/oppo_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★행운 로또번호 생성기★"
+            android:textSize="13.5dp"
+            android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/DOMI_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도미넌스"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/NEWS_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뉴스"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/DOL_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계산기"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/onechart_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/BTC_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/btc"
+            android:text="BTC" />
+
+        <ImageButton
+            android:id="@+id/ETH_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/eth"
+            android:text="ETH" />
+
+        <ImageButton
+            android:id="@+id/NFT_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/nft"
+            android:text="NFT" />
+
+
+        <ImageButton
+            android:id="@+id/DEFI_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/defi"
+            android:text="DeFi" />
+
+        <ImageButton
+            android:id="@+id/WED3_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/wed3"
+            android:text="WED3" />
+
+        <ImageButton
+            android:id="@+id/SMART_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/smart"
+            android:text="SMART" />
+
+
+        <ImageButton
+            android:id="@+id/DAPP_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/dapp"
+            android:text="DAPP" />
+
+        <ImageButton
+            android:id="@+id/DARK_move"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/darkcoin"
+            android:text="DARK" />
+
+
+    </GridLayout>
+
+
+</LinearLayout>
